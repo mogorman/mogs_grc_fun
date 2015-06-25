@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Thu Jun 25 04:49:49 2015</timestamp>
+  <timestamp>Thu Jun 25 04:51:24 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -825,7 +825,7 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>"button -&gt;"</value>
     </param>
     <param>
       <key>value</key>
