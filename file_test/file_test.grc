@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Fri Jun 26 11:50:55 2015</timestamp>
+  <timestamp>Tue Jun 30 16:09:09 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -427,7 +427,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(240, 108)</value>
+      <value>(264, 108)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -474,7 +474,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(240, 270)</value>
+      <value>(264, 270)</value>
     </param>
     <param>
       <key>_rotation</key>
