@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Tue Jun 30 19:45:52 2015</timestamp>
+  <timestamp>Wed Jul  1 00:05:10 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -515,57 +515,6 @@
     <key>blocks_throttle</key>
     <param>
       <key>id</key>
-      <value>blocks_throttle_0_1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>samples_per_second</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ignoretag</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(408, 92)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_throttle</key>
-    <param>
-      <key>id</key>
       <value>blocks_throttle_0</value>
     </param>
     <param>
@@ -617,6 +566,57 @@
     <key>blocks_throttle</key>
     <param>
       <key>id</key>
+      <value>blocks_throttle_0_1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>samples_per_second</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>ignoretag</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(408, 92)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_throttle</key>
+    <param>
+      <key>id</key>
       <value>blocks_throttle_0_0</value>
     </param>
     <param>
@@ -657,7 +657,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 324)</value>
+      <value>(48, 316)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -696,15 +696,15 @@
     </param>
     <param>
       <key>low_cutoff_freq</key>
-      <value>100</value>
+      <value>440e3</value>
     </param>
     <param>
       <key>high_cutoff_freq</key>
-      <value>8e3</value>
+      <value>510e3</value>
     </param>
     <param>
       <key>width</key>
-      <value>5e3</value>
+      <value>20e3</value>
     </param>
     <param>
       <key>win</key>
@@ -732,7 +732,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(296, 275)</value>
+      <value>(296, 267)</value>
     </param>
     <param>
       <key>_rotation</key>
