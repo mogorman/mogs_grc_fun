@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Thu Jul  2 11:08:39 2015</timestamp>
+  <timestamp>Sat Jul  4 01:20:08 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -69,33 +69,6 @@
     <key>variable</key>
     <param>
       <key>id</key>
-      <value>crush_rate</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>2e6</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(384, 5)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>id</key>
       <value>samp_rate</value>
     </param>
     <param>
@@ -113,6 +86,33 @@
     <param>
       <key>_coordinate</key>
       <value>(192, 13)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>id</key>
+      <value>crush_rate</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>2e6/3</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(384, 5)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -215,183 +215,6 @@
     <param>
       <key>_coordinate</key>
       <value>(240, 92)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_throttle</key>
-    <param>
-      <key>id</key>
-      <value>blocks_throttle_0_0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>samples_per_second</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ignoretag</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(48, 316)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>band_pass_filter</key>
-    <param>
-      <key>id</key>
-      <value>band_pass_filter_0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>fir_filter_ccf</value>
-    </param>
-    <param>
-      <key>decim</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>interp</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>gain</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>low_cutoff_freq</key>
-      <value>440e3</value>
-    </param>
-    <param>
-      <key>high_cutoff_freq</key>
-      <value>510e3</value>
-    </param>
-    <param>
-      <key>width</key>
-      <value>20e3</value>
-    </param>
-    <param>
-      <key>win</key>
-      <value>firdes.WIN_HAMMING</value>
-    </param>
-    <param>
-      <key>beta</key>
-      <value>6.76</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(208, 267)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_throttle</key>
-    <param>
-      <key>id</key>
-      <value>blocks_throttle_0_1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>samples_per_second</key>
-      <value>crush_rate</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ignoretag</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(408, 92)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -766,6 +589,238 @@
       <value>0</value>
     </param>
   </block>
+  <block>
+    <key>blocks_throttle</key>
+    <param>
+      <key>id</key>
+      <value>blocks_throttle_0_0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>samples_per_second</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>ignoretag</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(88, 316)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_throttle</key>
+    <param>
+      <key>id</key>
+      <value>blocks_throttle_0_1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>samples_per_second</key>
+      <value>crush_rate</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>ignoretag</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(408, 92)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>band_pass_filter</key>
+    <param>
+      <key>id</key>
+      <value>band_pass_filter_0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>fir_filter_ccf</value>
+    </param>
+    <param>
+      <key>decim</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>interp</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>gain</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>samp_rate</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>low_cutoff_freq</key>
+      <value>440e3</value>
+    </param>
+    <param>
+      <key>high_cutoff_freq</key>
+      <value>510e3</value>
+    </param>
+    <param>
+      <key>width</key>
+      <value>20e3</value>
+    </param>
+    <param>
+      <key>win</key>
+      <value>firdes.WIN_HAMMING</value>
+    </param>
+    <param>
+      <key>beta</key>
+      <value>6.76</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(112, 491)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>rational_resampler_xxx</key>
+    <param>
+      <key>id</key>
+      <value>rational_resampler_xxx_0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>ccc</value>
+    </param>
+    <param>
+      <key>interp</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>decim</key>
+      <value>3</value>
+    </param>
+    <param>
+      <key>taps</key>
+      <value></value>
+    </param>
+    <param>
+      <key>fbw</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(352, 519)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
   <connection>
     <source_block_id>blocks_file_source_0</source_block_id>
     <sink_block_id>blocks_throttle_0</sink_block_id>
@@ -816,6 +871,12 @@
   </connection>
   <connection>
     <source_block_id>band_pass_filter_0</source_block_id>
+    <sink_block_id>rational_resampler_xxx_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>rational_resampler_xxx_0</source_block_id>
     <sink_block_id>blocks_throttle_0_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
