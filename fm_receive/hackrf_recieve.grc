@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Mon Jul  6 18:52:31 2015</timestamp>
+  <timestamp>Mon Jul  6 18:54:40 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -1412,11 +1412,11 @@
     </param>
     <param>
       <key>if_gain0</key>
-      <value>16</value>
+      <value>8</value>
     </param>
     <param>
       <key>bb_gain0</key>
-      <value>18</value>
+      <value>16</value>
     </param>
     <param>
       <key>ant0</key>
