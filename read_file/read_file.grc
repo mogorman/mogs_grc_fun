@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Sat Jul  4 01:20:08 2015</timestamp>
+  <timestamp>Sun Jul  5 22:46:34 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -69,33 +69,6 @@
     <key>variable</key>
     <param>
       <key>id</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>2e6</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(192, 13)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>id</key>
       <value>crush_rate</value>
     </param>
     <param>
@@ -113,6 +86,33 @@
     <param>
       <key>_coordinate</key>
       <value>(384, 5)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>id</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>2e6</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(192, 13)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -786,7 +786,7 @@
     </param>
     <param>
       <key>decim</key>
-      <value>3</value>
+      <value>1</value>
     </param>
     <param>
       <key>taps</key>
