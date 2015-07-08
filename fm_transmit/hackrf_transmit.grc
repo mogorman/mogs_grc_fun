@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.5'?>
 <flow_graph>
-  <timestamp>Thu Jun 25 02:47:31 2015</timestamp>
+  <timestamp>Wed Jul  8 14:59:56 2015</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -86,57 +86,6 @@
     <param>
       <key>_coordinate</key>
       <value>(648, 21)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>analog_nbfm_tx</key>
-    <param>
-      <key>id</key>
-      <value>analog_nbfm_tx_0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>audio_rate</key>
-      <value>int(samp_rate)</value>
-    </param>
-    <param>
-      <key>quad_rate</key>
-      <value>int(samp_rate*2)</value>
-    </param>
-    <param>
-      <key>tau</key>
-      <value>75e-6</value>
-    </param>
-    <param>
-      <key>max_dev</key>
-      <value>5e3</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(48, 183)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -236,57 +185,6 @@
     <param>
       <key>_coordinate</key>
       <value>(272, 37)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>analog_wfm_tx</key>
-    <param>
-      <key>id</key>
-      <value>analog_wfm_tx_0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>audio_rate</key>
-      <value>int(samp_rate)</value>
-    </param>
-    <param>
-      <key>quad_rate</key>
-      <value>int(samp_rate*2)</value>
-    </param>
-    <param>
-      <key>tau</key>
-      <value>75e-6</value>
-    </param>
-    <param>
-      <key>max_dev</key>
-      <value>5e3</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(48, 287)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -898,6 +796,108 @@
     <param>
       <key>_coordinate</key>
       <value>(744, 168)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>analog_nbfm_tx</key>
+    <param>
+      <key>id</key>
+      <value>analog_nbfm_tx_0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>audio_rate</key>
+      <value>int(samp_rate)</value>
+    </param>
+    <param>
+      <key>quad_rate</key>
+      <value>int(samp_rate*2)</value>
+    </param>
+    <param>
+      <key>tau</key>
+      <value>75e-6</value>
+    </param>
+    <param>
+      <key>max_dev</key>
+      <value>5e3</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(48, 183)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>analog_wfm_tx</key>
+    <param>
+      <key>id</key>
+      <value>analog_wfm_tx_0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>audio_rate</key>
+      <value>int(samp_rate)</value>
+    </param>
+    <param>
+      <key>quad_rate</key>
+      <value>int(samp_rate*2)</value>
+    </param>
+    <param>
+      <key>tau</key>
+      <value>75e-6</value>
+    </param>
+    <param>
+      <key>max_dev</key>
+      <value>5e3</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(48, 287)</value>
     </param>
     <param>
       <key>_rotation</key>
