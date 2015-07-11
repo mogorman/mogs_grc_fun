@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_HELLOWORLD_BLOCK helloworld_block)
+
+FIND_PATH(
+    HELLOWORLD_BLOCK_INCLUDE_DIRS
+    NAMES helloworld_block/api.h
+    HINTS $ENV{HELLOWORLD_BLOCK_DIR}/include
+        ${PC_HELLOWORLD_BLOCK_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    HELLOWORLD_BLOCK_LIBRARIES
+    NAMES gnuradio-helloworld_block
+    HINTS $ENV{HELLOWORLD_BLOCK_DIR}/lib
+        ${PC_HELLOWORLD_BLOCK_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(HELLOWORLD_BLOCK DEFAULT_MSG HELLOWORLD_BLOCK_LIBRARIES HELLOWORLD_BLOCK_INCLUDE_DIRS)
+MARK_AS_ADVANCED(HELLOWORLD_BLOCK_LIBRARIES HELLOWORLD_BLOCK_INCLUDE_DIRS)
+
