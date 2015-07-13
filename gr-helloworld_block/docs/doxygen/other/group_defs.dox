@@ -1,7 +1,0 @@
-/*!
- * \defgroup block GNU Radio HELLOWORLD_BLOCK C++ Signal Processing Blocks
- * \brief All C++ blocks that can be used from the HELLOWORLD_BLOCK GNU Radio
- *        module are listed here or in the subcategories below.
- *
- */
-
