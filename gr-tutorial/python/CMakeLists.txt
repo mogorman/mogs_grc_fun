@@ -31,7 +31,9 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    multiply_py_ff.py DESTINATION ${GR_PYTHON_DIR}/tutorial
+    multiply_py_ff.py
+    bytes_to_message.py
+    message_to_bytes.py DESTINATION ${GR_PYTHON_DIR}/tutorial
 )
 
 ########################################################################
@@ -42,3 +44,5 @@ include(GrTest)
 set(GR_TEST_TARGET_DEPS gnuradio-tutorial)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_multiply_py_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiply_py_ff.py)
+GR_ADD_TEST(qa_bytes_to_message ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_bytes_to_message.py)
+GR_ADD_TEST(qa_message_to_bytes ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_message_to_bytes.py)

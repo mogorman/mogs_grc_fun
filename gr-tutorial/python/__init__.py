@@ -32,4 +32,6 @@ except ImportError:
 
 # import any pure python here
 from multiply_py_ff import multiply_py_ff
+from bytes_to_message import bytes_to_message
+from message_to_bytes import message_to_bytes
 #

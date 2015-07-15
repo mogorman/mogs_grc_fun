@@ -18,5 +18,7 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    tutorial_multiply_py_ff.xml DESTINATION share/gnuradio/grc/blocks
+    tutorial_multiply_py_ff.xml
+    tutorial_bytes_to_message.xml
+    tutorial_message_to_bytes.xml DESTINATION share/gnuradio/grc/blocks
 )
