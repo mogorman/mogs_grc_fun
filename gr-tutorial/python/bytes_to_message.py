@@ -29,8 +29,8 @@ class bytes_to_message(gr.sync_block):
     def __init__(self, length):
         gr.sync_block.__init__(self,
             name="bytes_to_message",
-            in_sig=[<+numpy.float+>],
-            out_sig=[<+numpy.float+>])
+            in_sig=[numpy.uint8],
+            out_sig=[None])
 
 
     def work(self, input_items, output_items):
