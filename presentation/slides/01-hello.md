@@ -1,5 +1,5 @@
-## Hello world
+## Hi everybody!
 
-Include images from "images" folder
+My name is mog
 
-![](images/magic.gif)
+![](images/mog_icon.png)
