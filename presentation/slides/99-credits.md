@@ -8,6 +8,8 @@ Github: mogorman
 
 Speech: http://rldn.net/gnuradio
 
+or http://rldn.net/gnuradio.pdf
+
 ![](images/mog_icon.png)
 
 note:
