@@ -325,30 +325,30 @@
     </param>
   </block>
   <block>
-    <key>analog_nbfm_tx</key>
+    <key>audio_source</key>
     <param>
       <key>id</key>
-      <value>analog_nbfm_tx_0</value>
+      <value>audio_source_0</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
-      <key>audio_rate</key>
-      <value>int(samp_rate)</value>
+      <key>samp_rate</key>
+      <value>44100</value>
     </param>
     <param>
-      <key>quad_rate</key>
-      <value>int(samp_rate*2)</value>
+      <key>device_name</key>
+      <value>loop_monitor</value>
     </param>
     <param>
-      <key>tau</key>
-      <value>75e-6</value>
+      <key>ok_to_block</key>
+      <value>True</value>
     </param>
     <param>
-      <key>max_dev</key>
-      <value>5e3</value>
+      <key>num_outputs</key>
+      <value>1</value>
     </param>
     <param>
       <key>alias</key>
@@ -372,7 +372,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(48, 247)</value>
+      <value>(8, 149)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -427,7 +427,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 247)</value>
+      <value>(48, 247)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -486,7 +486,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(496, 247)</value>
+      <value>(272, 247)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1501,7 +1501,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 313)</value>
+      <value>(504, 457)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1604,74 +1604,13 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 125)</value>
+      <value>(504, 261)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
   </block>
-  <block>
-    <key>audio_source</key>
-    <param>
-      <key>id</key>
-      <value>audio_source_0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>44100</value>
-    </param>
-    <param>
-      <key>device_name</key>
-      <value>loop_monitor</value>
-    </param>
-    <param>
-      <key>ok_to_block</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>num_outputs</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(8, 149)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <connection>
-    <source_block_id>analog_nbfm_tx_0</source_block_id>
-    <sink_block_id>rational_resampler_xxx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
   <connection>
     <source_block_id>analog_wfm_tx_0</source_block_id>
     <sink_block_id>rational_resampler_xxx_0</sink_block_id>
@@ -1681,12 +1620,6 @@
   <connection>
     <source_block_id>audio_source_0</source_block_id>
     <sink_block_id>blocks_multiply_const_vxx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_const_vxx_0</source_block_id>
-    <sink_block_id>analog_nbfm_tx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
