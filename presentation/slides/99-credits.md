@@ -12,4 +12,4 @@ or http://rldn.net/gnuradio.pdf
 
 ![](images/mog_icon.png)
 
-note:
+note:  email is best way to contact me
