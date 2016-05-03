@@ -4,4 +4,3 @@ everything in here is gplv3 unless stated otherwise
 
 prez is in pres format
 
-this is a test for commits
